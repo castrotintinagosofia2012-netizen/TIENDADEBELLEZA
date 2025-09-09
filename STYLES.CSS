@@ -1,0 +1,110 @@
+/* RESET DE MARGENES Y PADDING PARA ASEGURAR UN DISEÑO CONSISTENTE */
+*{
+  
+  MARGIN:0;
+  PADDING:0;
+  BOX-SIZING: BORDER-BOX;
+  
+}
+
+/* ESTILOS GLOBALES PARA EL CUERPO DE LA PAGINA */
+
+BODY {
+	
+ FONT-FAMILY:algerian ;/* TIPO DE LETRA ESTANDAR */
+ BACKGROUND-COLOR:#f4f4f4;/*FONDO GRIS CLARO*/
+ COLOR:PINK;/*TEXTO OSCURO PARA MEJORAR LA LEGIBIDAD */
+ LINE-HEIGHT: 1.6; /* espacio entre lineas de texto */
+}
+/*estilos para el encabezado */
+HEADER {
+	BACKGROUND-COLOR:#C81CDE;/*FONDO OSCURO PARA EL ENCABEZADO */
+	COLOR:#FB2C36;/*TEXTO BLANCO */ 
+	PADDING:20PX;/*ESPACIADO INTERNO */
+	TEXT-ALIGN:CENTER; /*CENTRAR EL TEXTO */
+}
+
+HEADER H1 {
+	FONT-SIZE:36PX;/*SEPARACION ENTRE EL TITULO Y LA NAVEGACION */
+	MARGIN-BOTTOM: 10PX; /*SEPARACION ENTRE EL TITULOY LA NAVEGACION */
+	
+}
+		/*ESTILOS PARA LA NAVEGACION */
+	HEADER NAV UL {
+		LIST-STYLE-TYPE:NONE;/*ELIMINAR LOS PUNTOS DE LA LISTA */
+	}
+	
+		
+	HEADER NAV UL LI {
+		DISPLAY:inline; /*ELIMINAR LOS PUNTOS DE LA LISTA */
+		MARGIN:0 :15px; /*espaciado entre los elementos de la lista */
+	}
+	header nav ul li a{
+		color:#3C0366;/*color blanco para los enlaces */
+		text-decoration:NONE;/* quitar subrayado de los enlaces */
+		font-size::#18px; /* tamaño de texto adecuado para los enlaces */
+	}
+	
+	header nav ul li a:hover {
+		text-decoration: underline; /*subrayado al pasar el raton por encima */
+		
+	}
+	
+	/* estilos para la seccion de productos */
+	
+	#productos {
+		margin: 40px auto;/*espaciado superior e inferior */
+		max-width:1200px;/*ancho maximo de la seccion */
+		text-align:center;/*centrar el contenido del producto*/
+	}
+	#productos h2 {
+		font-size: 30px;/*tamaño de fuente grande para el subtitulo */
+		margin-bottom:20px; /* separacion entre el subtitulo y los productos */
+	}
+	/* estilos para cada producto */
+	.producto {
+		display: inline-block;/*los productos estaran en linea */
+		width:45%; /*cada producto ocupa el 45% de ancho */
+		margin:20px 2.5%; /*espaciado entre los productos */
+		background-color: #fff; /*fondo blanco para cada producto */
+		box-shadow: 0 0 10px rgba (0,0,0,0.1);/*espaciado interno de los productos */
+		padding: 20px;/*espaciado interno de los productos */
+		text-align:center; /*centrar el contenido del producto*/
+	}
+	.producto img {
+		width:100%; /* las imagenes ocuparan todo el ancho disponible*/
+		max-width:200px; /* limitar el tamaño maximo de las imagenes */
+		height: auto; /*mantener la proporcion de las imagenes */
+	}
+	.producto h3 {
+		font-size:24px; /*tamaño adecuado para el nombre del producto*/ 
+		margin: 10px 0;/*separacion entre el nombre y la descripcion */ 
+	}
+	.producto p{
+		font-size:24px; /*tamaño adecuado para la descripcion y el precio */
+		margin:10px 0; /*separacion entre la descripcion y el precio */
+	}
+	.producto button {
+		padding: 10px 20px; /*espaciado dentro del boton */
+		font-size:8px; /*tamaño de fuente para el boton */
+		background-color:#f4f4f4; /*fuente oscuro para el boton */
+		color:#3C0366;/*texto blanco en el boton */
+		border:none;/*quitar el borden del boton */
+		cursor:pointer; /* cambiar el cursor cuando se pasa por encima */
+		margin-top: 10px; /*separacion superior */
+	}
+	.producto button: hover{
+		background-color:#555; /* cambiar el fondo cuando se pasa el raton por encima */
+	}
+	/* estilos para el pie de pagina */
+	footer{
+		background-color:#C81CDE; /*fondo oscuro para el pie de pagina */
+		color:#fff;/*texto blanco*/
+		padding:20px; /*espaciado dentro del pie de la pagina */
+		text-align:center;/*separacion del contenido principal*/
+	}
+	footer p {
+		font-size: 14px; /*tamaño de fuente pequeño para el texto del pie */
+	}
+		
+	
